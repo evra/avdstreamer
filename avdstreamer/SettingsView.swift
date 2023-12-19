@@ -7,6 +7,8 @@ struct AppSettingsView: View {
       @AppStorage("audioDeviceId") private var audioDeviceId = "default";
       @AppStorage("videoDeviceId") private var videoDeviceId = "none";
 
+      @AppStorage("ffmpegOptions") private var ffmpegOptions = "-c:a aac";
+    
     private var allDevices = getFFMpegDevicesList()
   
     
@@ -29,6 +31,7 @@ struct AppSettingsView: View {
                         Text(device.name)
                     }
                 }
+                TextField("FFMpeg options:", text: $ffmpegOptions)
                 
                 KeyboardShortcuts.Recorder("Start/stop shortcut:", name: .toggleStartStopMode)
                 

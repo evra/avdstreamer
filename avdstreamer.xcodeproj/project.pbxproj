@@ -54,6 +54,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6500CA362B30FC4600404025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		65DACCF32B2F38D1001131A5 /* avdstreamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = avdstreamer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65DACCFA2B2F38D3001131A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65DACCFD2B2F38D3001131A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -112,6 +113,7 @@
 		65DACCF52B2F38D1001131A5 /* avdstreamer */ = {
 			isa = PBXGroup;
 			children = (
+				6500CA362B30FC4600404025 /* Info.plist */,
 				65DACCFA2B2F38D3001131A5 /* Assets.xcassets */,
 				65DACCFF2B2F38D3001131A5 /* avdstreamer.entitlements */,
 				65DACCFC2B2F38D3001131A5 /* Preview Content */,
@@ -366,6 +368,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = avdstreamer/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Audio video desktop streamer and recorder";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_LSUIElement = YES;
@@ -399,6 +402,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = avdstreamer/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Audio video desktop streamer and recorder";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_LSUIElement = YES;

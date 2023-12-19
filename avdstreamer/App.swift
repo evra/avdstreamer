@@ -131,13 +131,14 @@ final class AppState: ObservableObject {
         let serverUrl = UserDefaults.standard.string(forKey: "rtmpServerUrl") ?? ""
         let audioDeviceId = UserDefaults.standard.string(forKey: "audioDeviceId") ?? "default"
         let videoDeviceId = UserDefaults.standard.string(forKey: "videoDeviceId") ?? "none"
-        
+        let ffmpegOptions = UserDefaults.standard.string(forKey: "ffmpegOptions") ?? "-c:a aac"
+                
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "YYMMd-HHmmss"
         let currentDateStr = dateFormatter.string(from: Date())
         
 //        let command = "-nostats -f avfoundation -ac 2 -i \(videoDeviceId):\(audioDeviceId) -c:a aac -f flv \(serverUrl)/\(currentDateStr).flv"
-        let command = "-nostats -f avfoundation -i \(videoDeviceId):\(audioDeviceId) -c:a aac -f flv \(serverUrl)/\(currentDateStr).flv"
+        let command = "-nostats -f avfoundation -i \(videoDeviceId):\(audioDeviceId) \(ffmpegOptions) -f flv \(serverUrl)/\(currentDateStr).flv"
         return command
     }
     
